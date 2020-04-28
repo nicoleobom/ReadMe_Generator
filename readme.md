@@ -1,24 +1,24 @@
 
 ## ReadMe Generator
-![nicoleobom](https://github.com/nicoleobom.png?size=150)
-nicoleobom@yahoo.com
+![nicoleobom](https://github.com/nicoleobom.png?size=150)<br />
+###### nicoleobom@yahoo.com
 ---
 ### Description
-Dynamically generates cool readme based on user input.
+###### Dynamically generates cool readme based on user input.
 ---
 ### How to Install / Use
-npm install
-undefined
+###### npm install
+###### undefined
 ---
 ### Licenses
-no
+###### no
 ---
 ### Contributors
-me
+###### Nicole O'Bomsawin
 ---
 ### Tests
-npm test
+###### npm test
 ---
 ### FAQ / Additional Readings
-no
+###### no
                 

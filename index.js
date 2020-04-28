@@ -83,27 +83,27 @@ async function gatherInput(req, res) {
 
     fileData = `
 ## ${name}
-![${githubName}](${bioImg})
-${email}
+![${githubName}](${bioImg})<br />
+###### ${email}
 ---
 ### Description
-${description}
+###### ${description}
 ---
 ### How to Install / Use
-${install}
-${usage}
+###### ${install}
+###### ${usage}
 ---
 ### Licenses
-${license}
+###### ${license}
 ---
 ### Contributors
-${contributors}
+###### ${contributors}
 ---
 ### Tests
-${test}
+###### ${test}
 ---
 ### FAQ / Additional Readings
-${faq}
+###### ${faq}
                 `
 
                 writeToFile();
