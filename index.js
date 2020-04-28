@@ -1,15 +1,5 @@
 let fs = require('fs');
 var fileData;
-let name;
-let description;
-let install;
-let usage;
-let license;
-let contributors;
-let test;
-let faq;
-let githubName;
-let email;
 
 gatherInput();
 
@@ -66,24 +56,24 @@ async function gatherInput(req, res) {
         message: 'What\'s your email address?',
     }
     ]);
-    console.log(response);
-    console.log(response.name);
 
-    name = response.name;
-    description = response.description;
-    install = response.install;
-    usage = response.useage;
-    license = response.license;
-    contributors = response.contributors;
-    test = response.test;
-    faq = response.questions;
-    githubName = response.github;
-    email = response.email;
+    let name = response.name;
+    let description = response.description;
+    let install = response.install;
+    let usage = response.useage;
+    let license = response.license;
+    let contributors = response.contributors;
+    let test = response.test;
+    let faq = response.questions;
+    let githubName = response.github;
+    let email = response.email;
     let bioImg = 'https://github.com/' + githubName + '.png?size=150'
+    let follow = 'https://img.shields.io/github/followers/' + githubName + '?label=Follow&style=social'
 
     fileData = `
 ## ${name}
 ![${githubName}](${bioImg})<br />
+!(${follow})<br />
 ###### ${email}
 ---
 ### Description
@@ -106,7 +96,7 @@ async function gatherInput(req, res) {
 ###### ${faq}
                 `
 
-                writeToFile();
+writeToFile();
 }
 
 function writeToFile() {
@@ -114,7 +104,3 @@ function writeToFile() {
         if (err) throw err;
     });
 }
-
-
-
-// LInk to github pic https://github.com/USERNAME.png?size=150

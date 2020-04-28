@@ -1,24 +1,25 @@
 
-## ReadMe Generator
+## Cool ReadMe Generator
 ![nicoleobom](https://github.com/nicoleobom.png?size=150)<br />
+!(https://img.shields.io/github/followers/nicoleobom?label=Follow&style=social)<br />
 ###### nicoleobom@yahoo.com
 ---
-### Description <br />
-Dynamically generates cool readme based on user input.
+### Description
+###### Dynamically generates readme file based on your input!
 ---
-### How to Install / Use <br />
-npm install <br />
-undefined
+### How to Install / Use
+###### npm install
+###### undefined
 ---
-### Licenses <br />
-no
+### Licenses
+###### no
 ---
-### Contributors <br />
-Nicole O'Bomsawin
+### Contributors
+###### Nicole O'Bomsawin
 ---
-### Tests <br />
-npm test
+### Tests
+###### test
 ---
-### FAQ / Additional Readings <br />
-no
+### FAQ / Additional Readings
+###### N/A
                 
