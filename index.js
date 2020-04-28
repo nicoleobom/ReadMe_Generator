@@ -82,29 +82,28 @@ async function gatherInput(req, res) {
     let bioImg = 'https://github.com/' + githubName + '.png?size=150'
 
     fileData = `
-                ## ${name}
-                ![${githubName}](${bioImg})
-                ${email}
-                ---
-                ### Description
-                ${description}
-                ---
-                ### How to Install / Use
-                ${install}
-                ${usage}
-                ---
-                ### Licenses
-                ${license}
-                ---
-                ### Contributors
-                ${contributors}
-                ---
-                ### Tests
-                ${test}
-                ---
-                ### FAQ / Additional Readings
-                ${faq}
-
+## ${name}
+![${githubName}](${bioImg})
+${email}
+---
+### Description
+${description}
+---
+### How to Install / Use
+${install}
+${usage}
+---
+### Licenses
+${license}
+---
+### Contributors
+${contributors}
+---
+### Tests
+${test}
+---
+### FAQ / Additional Readings
+${faq}
                 `
 
                 writeToFile();
