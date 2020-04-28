@@ -1,12 +1,19 @@
 let fs = require('fs');
+var fileData;
+let name;
+let description;
+let install;
+let usage;
+let license;
+let contributors;
+let test;
+let faq;
+let githubName;
+let email;
 
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, writeToFile);
-    // Write user input in file
-}
+gatherInput();
 
-
-async function fun1(req, res) {
+async function gatherInput(req, res) {
     const { prompt } = require('enquirer');
     const response = await prompt ([
     {
@@ -47,12 +54,68 @@ async function fun1(req, res) {
         type: 'input',
         name: 'questions',
         message: 'Any FAQ or additional readings?',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What\'s your GitHub username?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What\'s your email address?',
     }
     ]);
-    // console.log(response);
-    data = response;
-    writeToFile('readme.md', data);
+    console.log(response);
+    console.log(response.name);
+
+    name = response.name;
+    description = response.description;
+    install = response.install;
+    usage = response.useage;
+    license = response.license;
+    contributors = response.contributors;
+    test = response.test;
+    faq = response.questions;
+    githubName = response.github;
+    email = response.email;
+    let bioImg = 'https://github.com/' + githubName + '.png?size=150'
+
+    fileData = `
+                ## ${name}
+                ![${githubName}](${bioImg})
+                ${email}
+                ---
+                ### Description
+                ${description}
+                ---
+                ### How to Install / Use
+                ${install}
+                ${usage}
+                ---
+                ### Licenses
+                ${license}
+                ---
+                ### Contributors
+                ${contributors}
+                ---
+                ### Tests
+                ${test}
+                ---
+                ### FAQ / Additional Readings
+                ${faq}
+
+                `
+
+                writeToFile();
 }
 
-fun1();
+function writeToFile() {
+    fs.writeFile('readme.md', fileData, (err) => {
+        if (err) throw err;
+    });
+}
 
+
+
+// LInk to github pic https://github.com/USERNAME.png?size=150
