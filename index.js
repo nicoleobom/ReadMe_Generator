@@ -57,6 +57,11 @@ async function gatherInput(req, res) {
     }
     ]);
 
+    if (response == '') {
+        const error = "you must submit a response"
+        console.log(error);
+    }
+
     let name = response.name;
     let description = response.description;
     let install = response.install;
@@ -68,7 +73,7 @@ async function gatherInput(req, res) {
     let githubName = response.github;
     let email = response.email;
     let bioImg = 'https://github.com/' + githubName + '.png?size=150'
-    let follow = 'https://img.shields.io/github/followers/' + githubName + '?label=Follow&style=social'
+    let follow = 'https://img.shields.io/github/followers/' + githubName + '?label=Followers&style=social'
 
     fileData = `
 ## ${name}

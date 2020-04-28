@@ -1,7 +1,7 @@
 
 ## Cool ReadMe Generator
 ![nicoleobom](https://github.com/nicoleobom.png?size=150)<br />
-![Follow Badge](https://img.shields.io/github/followers/nicoleobom?label=Follow&style=social)<br />
+![Followers Badge](https://img.shields.io/github/followers/nicoleobom?label=Follow&style=social)<br />
 ###### nicoleobom@yahoo.com
 ---
 ### Description
